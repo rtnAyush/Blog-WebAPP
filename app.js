@@ -75,7 +75,7 @@ async function main(){
       });
   });
 
-  const port = 3000 || process.env.PORT;
+  const port = process.env.PORT || 3000;
   app.listen(port, function(res){
     console.log("Server is started at port :"+port);
   });
